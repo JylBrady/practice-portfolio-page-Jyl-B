@@ -1,0 +1,129 @@
+<!--  HTML and CSS | Practice 2 
+Practice: Portfolio Page
+Instructions 
+
+You will create a static HTML portfolio page that includes various HTML tags, a 
+contact form, and a table showcasing your skills or experience. This activity will help 
+you practice structuring content, incorporating forms, and organizing data with 
+tables. 
+
+Tasks:
+    Step 1: Plan the Portfolio Page 
+        Before coding, students will plan the structure of their portfolio page. 
+        The page should include: 
+        1. A Header: Contains the name and a brief tagline. 
+        2. An "About Me" Section: Includes a paragraph about themselves. 
+        3. A Skills Table: Displays a list of skills or tools with proficiency levels in a table format. 
+        4. A Contact Form: Allows visitors to send a message, including fields for the visitor's name, email, and message. 
+
+    Step 2: Create the HTML Structure 
+        1. Use semantic tags like <header>, <section>, and <footer> to organize the page. 
+        2. Create a table with appropriate headers (<th>), rows (<tr>), and cells (<td>). 
+        3. Add a form with labels, input fields, and a submit button. The form should use:
+                ○ type="text" for the name field. 
+                ○ type="email" for the email field. 
+                ○ <textarea> for the message field. 
+        4. Use other relevant tags, such as <h1>, <p>, <ul>, or <img>, to enhance the design. 
+
+    Step 3: Test and Review 
+    Once the page is complete, you should: 
+        1. Test the form to ensure all fields are correctly labeled. 
+        2. Check the table for proper alignment and formatting. 
+        3. Review the code to ensure proper use of tags and attributes. 
+                Example Structure 
+                ● Header 
+                ● About Me Section 
+                ● Skills Table 
+                ● Contact Form  -->
+
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>practice-portfolio</title>
+        </head>
+    
+    <body style="background-color:mintcream;">
+        
+        <header style="color:seagreen; background-color:lightyellow">  <!--HEADER : Contains the name and a brief tagline. -->
+            <hr size="10" color="gold";>
+            <h1>This Girl can learn hard things</h1>
+            <em> . . . and other stuff . . .</em>
+        </header>
+        <hr size="10" color="gold";>
+        <hr size="25" color="SteelBlue";>
+ 
+        <main>  
+            <div>   <!--An "About Me" Section: Includes a paragraph about themselves. -->
+                <h2> Who is This Girl, anyway?</h2>
+                <p>She's just another human, trying to make her way through life.  She grows; she changes; <br>
+                    she tries to keep learning. Sometimes she learns useful things.  Sometimes she learns <br>
+                    amusing things.  Sometimes she learns because she has to.  Sometimes she learns because <br>
+                    she wants to.  Sometimes she learns just because she can. <br><br>
+                    What are some of the things she's learned?  I'm glad you asked!
+                </p>
+            </div> 
+            <div>   <!--A Skills Table: Displays a list of skills or tools with proficiency levels in a table format. -->  
+                <h3 style="background-color:steelblue; color:mintcream"> Some things she's learned "officially"</h3>
+                <table border="1">  
+                    <tr>
+                        <th>Degree/Certificate</th>
+                        <th>Completed At</th>
+                        <th>Completed On</th>
+                    </tr>
+                    <tr>
+                        <td>Liberal Arts</td>
+                        <td>Northern VA Community College</td>
+                        <td>1999</td>
+                    </tr>
+                    <tr>
+                        <td>Art</td>
+                        <td>Illinois State University</td>
+                        <td>2002</td>
+                    </tr>
+                    <tr>
+                        <td>Mass Communication</td>
+                        <td>Illinois State University</td>
+                        <td>2002</td>
+                    </tr>
+                    <tr>
+                        <td>Teacher Certification</td>
+                        <td>Texas Region IV ESC teachcer certification program</td>
+                        <td>2002</td>
+                    </tr>
+                    <tr>
+                        <td>Paralegal Certification</td>
+                        <td>NALA</td>
+                        <td>2023</td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+            </div>
+        </main>
+        
+        <section style="color:seagreen; background-color:lightyellow"> <!--A Contact Form: Allows visitors to send a message, including fields for the  visitor's name, email, and message.-->
+            <hr size="5" color="steelblue";>
+            <br>
+            <h4>Let me know what you've been learning!</h4>
+            <form action="/submit" method="POST">
+                <label for="text">Name:</label> <br>
+                <input type="text" id="name" name="name"> <br><br>
+                <label for="email">email:</label> <br>
+                <input type="email" id="email" email="email"><br><br>
+                <label for="message">Message:</label> <br>
+                <textarea id="message" name="message" rows="5" cols="30" placeholder="What have you been learning?"></textarea><br>
+                <button type="submit">Submit</button>
+                <br><br>
+             </form>
+        </section>
+    
+        <footer>
+            <hr size="5" color="steelblue";>
+            <hr size="5" color="gold";>
+            <p>&copy; This is just an educational exercise.</p>
+            <hr size="15" color="steelblue";>
+        </footer>
+    </body>
+</html>
