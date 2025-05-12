@@ -1,0 +1,85 @@
+header {
+    width: 100vw;
+    height: 25%; 
+    background: url('images/JB-Painting.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.overlay {
+    width: 100%; 
+    height: 50%; 
+    background: rgba(255, 255, 255, 0.9); 
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+main {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+h1{
+    font-family: "Lora";
+    font-size: 3.5rem; 
+    color: #006600;  
+    font-weight: bold;
+
+}
+
+h2{
+    font-family: "Lora";
+    font-size: 1.5rem;
+    font-style: italic; 
+    color: #b93400;  
+}
+
+
+body{
+    font-family: "Poppins";
+    font-size: 1rem; 
+    color: #022002; 
+    padding-left: 30px;
+    background-color:#fffef9fd;
+}
+
+footer{
+    font-family: "Poppins";
+    font-size: .8rem; 
+    color: white;  
+    background-color: #006600;
+    padding: 5px;
+    background-size: cover;
+}
+
+.profile img {
+    margin-right: 30px;
+    width: 300px; 
+    height: auto; 
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding-right: 20px;
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

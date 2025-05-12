@@ -1,0 +1,99 @@
+<!--  HTML & CSS| Lesson 3 
+Practice: Profile Page for Portfolio 
+
+Instructions 
+    For this practice, you’ll be creating a profile page for your portfolio. You’ll plan your 
+    profile page, create the HTML structure, and write an external CSS file. You’ll use 
+    everything you’ve learned so far about HTML & CSS in order to create your page. 
+Tasks 
+    Step 1: Plan Your Profile Page 
+            Think about how you want your profile page to look and what content to include. 
+            The page should contain: 
+                1. A Header: Includes your name and a brief tagline 
+                2. A Section with a Profile Picture and About Me Text: Use a placeholder image or a real one. 
+                3. A Skills List: Include at least 3 skills presented in a list (ordered or unordered). 
+                4. A Footer: Add any additional information, such as a copyright message or a link to your GitHub profile. 
+    Step 2: Create the HTML Structure 
+            In your HTML file: 
+                1. Write semantic HTML using tags like <header>, <section>, <ul>/<ol>, and <footer>. 
+                2. Ensure your content is well-organized with meaningful IDs or classes for styling. 
+    Step 3: Write the External CSS File 
+            Create a separate CSS file to style your HTML: 
+                1. Link the CSS File: Use the <link> tag in the <head> section of your HTML file to connect the CSS. 
+                2. Add CSS Rules: Style the elements in your HTML file using element selectors, class selectors, and ID selectors. Focus on: 
+                    ○ Setting background colors. 
+                    ○ Adjusting text alignment, colors, and fonts. 
+                    ○ Adding spacing and padding to elements. 
+    Step 4: Test and Iterate 
+            1. Open the HTML file in your browser to see the styling applied. 
+            2. Adjust the CSS rules as needed to achieve the desired look. -->
+
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>profile page</title>
+            <link rel="stylesheet" type="text/css" href="profile.css">
+            <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+            <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        </head>
+    
+    <body>
+
+        <header>  <!--HEADER : Contains the name and a brief tagline. -->
+            <div class="overlay">
+                <h1>This Girl can learn hard things</h1>
+                <h2>. . . and other stuff . . .</h2>
+            </div>
+        </header>
+       
+        <main>
+            <div class="row"> 
+                <div class="profile column">
+                    <img src="images/my-image.jpg" alt="JB collage portrait">  <!--A Section with a Profile Picture and About Me Text-->
+                </div>
+                <div class="column">
+                    <h2>Who is This Girl, anyway?</h2>
+                    <p>She's just another human, trying to make her way through life.  She grows; she changes; <br>
+                    she tries to keep learning. Sometimes she learns useful things.  Sometimes she learns <br>
+                    amusing things.  Sometimes she learns because she has to.  Sometimes she learns <br>
+                    because she wants to.  Sometimes she learns just because she can. <br><br>
+                    What are some of the things she's learned?  I'm glad you asked!
+                    </p>
+                </div>
+            </div>
+       
+            <div class="row">   <!-- A Skills List: Include at least 3 skills presented in a list (ordered or unordered). --> 
+                <div class= "column">
+                    <h2>Does This Girl Have Skills?</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class= "column">
+                    <h4>Degrees and Certificates</h4>
+                    <ul>
+                        <li>A.A. Liberal Arts</li>
+                        <li>B.A.  Art</li>
+                        <li>B.A. Mass Communication</li>
+                        <li>TX Teacher Certification</li>
+                        <li>Paralegal Certificat</li>
+                    </ul>
+                </div>
+                <div class= "column">
+                    <h4>Some other stuff she has been learning:</h4>
+                    <ul>
+                        <li>Coding: Javascript, Html, CSS</li>
+                        <li>Guitar</li>
+                        <li>Gardening</li>
+                        <li>Tap-Dancing</li>
+                    </ul>
+                </div>
+            </div>     
+        </main>
+        
+        <footer>
+            <p>&copy; This is just an educational exercise.</p>
+        </footer>
+    </body>
+</html>
